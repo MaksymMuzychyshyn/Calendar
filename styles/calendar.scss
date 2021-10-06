@@ -1,0 +1,65 @@
+@import 'variables.scss';
+.calendar {
+  &__header {
+    display: flex;
+    margin-left: 70px;
+  }
+
+  &__body {
+    overflow-y: scroll;
+    height: 78.5vh;
+    padding-top: 5px;
+  }
+
+  &__week-container {
+    display: flex;
+  }
+
+  &__week {
+    display: flex;
+    width: 1120px;
+    border-top: 1px solid $border-grey;
+  }
+
+  &__day {
+    width: 160px;
+  }
+
+  &__time-slot {
+    height: 60px;
+    border-bottom: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+    position: relative;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.day-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 160px;
+  height: 100px;
+
+  &__day-name {
+    margin-bottom: 10px;
+  }
+  &__day-number {
+    font-size: 24px;
+  }
+}
+
+.calendar__body::-webkit-scrollbar {
+  width: 0;
+}
+
+.redline {
+  position: absolute;
+  width: 161px;
+  height: 2px;
+  background-color: red;
+  left: -1px;
+}

@@ -1,0 +1,22 @@
+@import 'page.scss';
+@import 'common.scss';
+@import 'navigation.scss';
+@import 'calendar.scss';
+@import 'timescale.scss';
+@import 'create-event.scss';
+@import 'event.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  margin: auto;
+  height: 100vh;
+  width: 1200px;
+  margin: auto;
+  padding-top: 40px;
+}
